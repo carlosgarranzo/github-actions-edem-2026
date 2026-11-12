@@ -3,7 +3,7 @@ name: Welcome to the party
 on:
   workflow_dispatch:
     inputs:
-      thename:
+      thename: Carlos
         description: 'What is your name?'
         required: true
         type: string
