@@ -1,0 +1,25 @@
+
+name: Global Environment Variables
+
+on:
+  workflow_dispatch:
+
+env:
+  MESSAGE: "Hello from GitHub Actions!"
+
+jobs:
+  job_one:
+    name: First Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display message
+        run: echo "Job 1 says $MESSAGE"
+
+  job_two:
+    name: Second Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display message
+        run: echo "Job 2 says $MESSAGE"
